@@ -40,6 +40,6 @@ def get_local_datetime_of_attempt(attempt_info):
 if __name__ == '__main__':
     attempts_generator = load_attempts()
     midnighters_list = get_midnighters(attempts_generator)
-    print('The users who sent the assignment between 0:00 and 6:00:')
+    print('The users who has ever sent an assignment between 0:00 and 6:00:')
     for user in midnighters_list:
         print(user)
