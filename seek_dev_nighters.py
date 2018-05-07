@@ -32,7 +32,10 @@ def get_midnighters(attempts):
 
 def get_local_datetime_of_attempt(attempt_info):
     user_timezone = pytz.timezone(attempt_info['timezone'])
-    local_datetime = datetime.fromtimestamp(attempt_info['timestamp'], tz=user_timezone)
+    local_datetime = datetime.fromtimestamp(
+        attempt_info['timestamp'],
+        tz=user_timezone
+    )
     return local_datetime
 
 
